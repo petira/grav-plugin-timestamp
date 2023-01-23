@@ -1,0 +1,37 @@
+en:
+  PLUGIN_TIMESTAMP:
+    LIST_LABEL: List of variables
+    LIST_HELP: List of variables to be overriden from string to timestamp
+    LIST_KEY: Original variable (e.g. 'date' or 'event.start')
+    LIST_VALUE: New variable (e.g. 'date' or 'date_new')
+    DEFAULT_LABEL: Default date value
+    DEFAULT_HELP: A default value that applies to all variables
+    DEFAULT_OPTION_EMPTY: Empty
+    DEFAULT_OPTION_DATE: Date
+    DEFAULT_OPTION_MODIFIED: Modified
+    DEFAULT_OPTION_PAST: Past
+    DEFAULT_OPTION_PRESENT: Present
+    DEFAULT_OPTION_FUTURE: Future
+    CUSTOM_LABEL: Custom date values
+    CUSTOM_HELP: Custom values that applies to individual variables, the default value is overriden by them
+    CUSTOM_KEY: Original variable (e.g. 'date' or 'event.start')
+    CUSTOM_VALUE: Command ('empty', 'date', 'modified', 'past', 'present' or 'future')
+
+cs:
+  PLUGIN_TIMESTAMP:
+    LIST_LABEL: Seznam proměnných
+    LIST_HELP: Seznam proměnných, které mají být přepsány z řetězce na časové razítko
+    LIST_KEY: Původní proměnná (např. 'date' nebo 'event.start')
+    LIST_VALUE: Nová proměnná (např. 'date' nebo 'date_new')
+    DEFAULT_LABEL: Výchozí hodnota data
+    DEFAULT_HELP: Výchozí hodnota, která platí pro všechny proměnné
+    DEFAULT_OPTION_EMPTY: Prázdná
+    DEFAULT_OPTION_DATE: Datum
+    DEFAULT_OPTION_MODIFIED: Upraveno
+    DEFAULT_OPTION_PAST: Minulost
+    DEFAULT_OPTION_PRESENT: Současnost
+    DEFAULT_OPTION_FUTURE: Budoucnost
+    CUSTOM_LABEL: Vlastní hodnoty data
+    CUSTOM_HELP: Vlastní hodnoty, které platí pro jednotlivé proměnné, je jimi přepsána výchozí hodnota
+    CUSTOM_KEY: Původní proměnná (např. 'date' nebo 'event.start')
+    CUSTOM_VALUE: Příkaz ('empty', 'date', 'modified', 'past', 'present' nebo 'future')

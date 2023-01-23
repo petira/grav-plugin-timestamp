@@ -1,0 +1,60 @@
+name: Timestamp
+slug: timestamp
+type: plugin
+version: 1.0.0
+description: The Timestamp Plugin overrides the values of all listed `date` type variables from a recognizable `string` format to a value in `timestamp` format. Valid values are any string date values that `strtotime()` supports. Optionally, if a variable is not specified on a page, it can be created and the selected value returned to it.
+icon: clock-o
+author:
+  name: Vít Petira
+  email: petira@grav.cz
+  url: https://www.grav.cz
+homepage: https://github.com/petira/grav-plugin-timestamp
+demo: https://www.grav.cz/demo/timestamp
+keywords: grav, plugin, timestamp, date, time, epoch, unix, format, frontmatter, petira
+bugs: https://github.com/petira/grav-plugin-timestamp/issues
+docs: https://github.com/petira/grav-plugin-timestamp/blob/develop/README.md
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    list:
+      type: array
+      label: PLUGIN_TIMESTAMP.LIST_LABEL
+      help: PLUGIN_TIMESTAMP.LIST_HELP
+      placeholder_key: PLUGIN_TIMESTAMP.LIST_KEY
+      placeholder_value: PLUGIN_TIMESTAMP.LIST_VALUE
+      required: true
+    default:
+      type: select
+      size: large
+      label: PLUGIN_TIMESTAMP.DEFAULT_LABEL
+      default: empty
+      options:
+        empty: PLUGIN_TIMESTAMP.DEFAULT_OPTION_EMPTY
+        date: PLUGIN_TIMESTAMP.DEFAULT_OPTION_DATE
+        modified: PLUGIN_TIMESTAMP.DEFAULT_OPTION_MODIFIED
+        past: PLUGIN_TIMESTAMP.DEFAULT_OPTION_PAST
+        present: PLUGIN_TIMESTAMP.DEFAULT_OPTION_PRESENT
+        future: PLUGIN_TIMESTAMP.DEFAULT_OPTION_FUTURE
+      help: PLUGIN_TIMESTAMP.DEFAULT_HELP
+    custom:
+      type: array
+      label: PLUGIN_TIMESTAMP.CUSTOM_LABEL
+      help: PLUGIN_TIMESTAMP.CUSTOM_HELP
+      placeholder_key: PLUGIN_TIMESTAMP.CUSTOM_KEY
+      placeholder_value: PLUGIN_TIMESTAMP.CUSTOM_VALUE
+      required: true
