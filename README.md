@@ -18,7 +18,7 @@ The [demo](https://www.grav.cz/demo/timestamp) is available on the [Grav.cz](htt
 
 When using the Timestamp Plugin on a multi-language website, the system crashes because the individual language versions of the pages are not treated. The issue will be fixed as soon as possible in some future version.
 
-If you still want to use the Timestamp Plugin on a multi-language website, set the Content Language Fallback to each other for all languages in the `user/config/system.yaml` file, for example like this:
+If you still want to use the Timestamp Plugin on a multi-language website, set the Content Language Fallback to each other for all languages in the `/user/config/system.yaml` file, for example like this:
 
 ```
 languages:
@@ -61,7 +61,7 @@ If you use the Admin Plugin, you can install the plugin directly by browsing the
 
 ## Configuration
 
-Before configuring this plugin, you should copy the `/user/plugins/timestamp/timestamp.yaml` to `user/config/plugins/timestamp.yaml` and only edit that copy.
+Before configuring this plugin, you should copy the `/user/plugins/timestamp/timestamp.yaml` to `/user/config/plugins/timestamp.yaml` and only edit that copy.
 
 Here is the default configuration and an explanation of available options:
 
@@ -113,7 +113,7 @@ In the **List of variables**, enter the name of the original variable and the na
 
 If the new variable has the same name as the original variable, the original variable will be overriden within the session:
 
-    date_modified = 14:36:27 18-01-2023
+    date_modified = '14:36:27 18-01-2023'
 
 | Original variable | New variable |
 | - | - |
